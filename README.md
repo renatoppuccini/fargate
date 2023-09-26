@@ -56,6 +56,10 @@ https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-far
 open-cluster-management-agent
 open-cluster-management-agent-addon
 ```
+![Screen Shot 2023-09-26 at 4 25 23 PM](https://github.com/renatoppuccini/fargate/assets/1215178/8df350c2-7792-4d71-8240-45ef3637a07c)
+![Screen Shot 2023-09-26 at 4 25 36 PM](https://github.com/renatoppuccini/fargate/assets/1215178/dae98d61-92bb-4471-a582-032ba5ea10b6)
+
+
 
 After the ACM is deployed, it should look like this:
 ![image (3)](https://github.com/renatoppuccini/fargate/assets/1215178/43b6e51c-c7b8-4bea-9112-dba3b97826c9)
