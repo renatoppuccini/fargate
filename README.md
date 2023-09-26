@@ -1,3 +1,7 @@
+# Goal
+The goal of this document is to describe how Red Hat Advanced Cluster Management for Kubernetes can manage an EKS cluster with Fargate deployment.
+It walks through the EKS + Fargate clsuter creation, app deployment, FargateProfile for the app deployment, Options for ACM deployment and finally ACM management/monitoring.
+
 # Deploy EKS Fargate Cluster
 
 ```
