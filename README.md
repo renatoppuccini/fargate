@@ -43,9 +43,10 @@ deployment.apps/eks-sample-linux-deployment created
 service/eks-sample-linux-service created
 ```
 # Deploy ACM
-In order to deploy ACM pods to manage/monitor the EKS cluster, it is needed to create nodePool or a fargateProfile for ACM. one or the other works, it does need to be both.
+In order to deploy ACM pods to manage/monitor the EKS cluster with Fargate, it is needed to create nodePool or a fargateProfile. 
+One or the other works, it does need to be both.
 
-## Creating NodePools:
+## AWS documentation on how to create NodePools:
 https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html
 
 ## Creating Fargate Profile with 2 namespaces via the AWS Web Console:
@@ -60,7 +61,7 @@ open-cluster-management-agent-addon
 ![Screen Shot 2023-09-26 at 4 25 36 PM](https://github.com/renatoppuccini/fargate/assets/1215178/dae98d61-92bb-4471-a582-032ba5ea10b6)
 
 
-
+# RESULTS
 After the ACM is deployed, it should look like this:
 ![image (3)](https://github.com/renatoppuccini/fargate/assets/1215178/43b6e51c-c7b8-4bea-9112-dba3b97826c9)
 ![image (5)](https://github.com/renatoppuccini/fargate/assets/1215178/22b6be12-eae7-4130-9699-57fdc47d4962)
