@@ -28,7 +28,7 @@ fargate-ip-192-168-181-231.us-east-2.compute.internal   Ready    <none>   7m16s 
 namespace/eks-sample-app created
 ```
 
-# Create profile with the namespace in it.
+# Create Fargate profile with the app namespace in it.
 ```
 % eksctl create fargateprofile --cluster my-cluster --name test-fargate --namespace eks-sample-app         
 2023-09-26 11:39:43 [ℹ]  creating Fargate profile "test-fargate" on EKS cluster "my-cluster"
@@ -67,6 +67,9 @@ open-cluster-management-agent-addon
 
 # RESULTS
 After the ACM is deployed, it should look like this:
+## ACM Detects Fargate nodes:
 ![image (3)](https://github.com/renatoppuccini/fargate/assets/1215178/43b6e51c-c7b8-4bea-9112-dba3b97826c9)
+
+## ACM detects Fargate Workload:
 ![image (5)](https://github.com/renatoppuccini/fargate/assets/1215178/22b6be12-eae7-4130-9699-57fdc47d4962)
 ![image (4)](https://github.com/renatoppuccini/fargate/assets/1215178/dcdaa06b-6b81-40d9-b90b-c06cd3aff998)
