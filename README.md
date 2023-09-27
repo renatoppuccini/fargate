@@ -60,6 +60,21 @@ eksctl create nodegroup \
   --node-type m5.large \
   --nodes 3
 ```
+```
+% eksctl create nodegroup --cluster my-cluster --region us-east-2 --name acm-group --node-type m5.xlarge --nodes 2
+2023-09-26 13:06:51 [ℹ]  will use version 1.25 for new nodegroup(s) based on control plane version
+2023-09-26 13:06:52 [ℹ]  nodegroup "acm-group" will use "" [AmazonLinux2/1.25]
+2023-09-26 13:06:52 [ℹ]  1 nodegroup (acm-group) was included (based on the include/exclude rules)
+2023-09-26 13:06:52 [ℹ]  will create a CloudFormation stack for each of 1 managed nodegroups in cluster "my-cluster"
+...
+...
+2023-09-26 13:10:33 [✔]  created 0 nodegroup(s) in cluster "my-cluster"
+...
+...
+2023-09-26 13:10:33 [✔]  created 1 managed nodegroup(s) in cluster "my-cluster"
+2023-09-26 13:10:33 [ℹ]  checking security group configuration for all nodegroups
+2023-09-26 13:10:33 [ℹ]  all nodegroups have up-to-date cloudformation templates
+```
 
 ## Creating Fargate Profile with 2 namespaces via the AWS Web Console:
 https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-fargate-profile
