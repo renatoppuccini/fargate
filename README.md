@@ -52,6 +52,14 @@ One or the other works, it does need to be both.
 
 ## AWS documentation on how to create NodePools:
 https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html
+```
+eksctl create nodegroup \
+  --cluster my-cluster-name \
+  --region region-code \
+  --name my-mng \
+  --node-type m5.large \
+  --nodes 3
+```
 
 ## Creating Fargate Profile with 2 namespaces via the AWS Web Console:
 https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-fargate-profile
